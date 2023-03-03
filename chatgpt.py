@@ -47,7 +47,7 @@ def get_chatgpt(message):
   global dialogue_history
   global history
 
-  while num_tokens_from_messages(history) > 3584:
+  while num_tokens_from_messages(history + [{"role": "user", "content": message.text}]) >= 3584:
     history = history[:1] + history[3:]
 
   response = openai.ChatCompletion.create(
