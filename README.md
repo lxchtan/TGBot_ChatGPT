@@ -11,7 +11,7 @@ The requirements package is in `requirements.txt`.
 
 ##### Run
 
-There are there steps you need to do.
+There are three steps you need to do.
 
 1. Register for an OpenAI account and create API Keys on url [Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys).
 
